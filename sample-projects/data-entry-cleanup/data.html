@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Entry &amp; CRM Cleanup — Sunrise Travel Co. | Andrei Torres</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0a0b; --card: #16161a; --border: #26262b;
+    --text: #f4f4f5; --dim: #9d9da3; --accent: #ff4d6d; --green: #4ade80; --amber: #fbbf24;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: "Inter", system-ui, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 40px 20px 80px; }
+  .pill {
+    display: inline-block; font-family: "JetBrains Mono", monospace; font-size: 0.72rem;
+    letter-spacing: 1px; color: var(--accent); border: 1px solid var(--border);
+    padding: 5px 12px; border-radius: 999px; margin-bottom: 18px;
+  }
+  h1 { font-size: clamp(1.7rem, 4vw, 2.4rem); margin-bottom: 8px; }
+  .sub { color: var(--dim); margin-bottom: 32px; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 24px; }
+  .card + .card { margin-top: 20px; }
+  h2 { font-size: 1.1rem; margin-bottom: 12px; }
+  .meta { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 18px; }
+  .meta div span { display: block; color: var(--dim); font-size: 0.8rem; }
+  .meta div strong { font-size: 0.9rem; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.86rem; }
+  th, td { text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  th { font-family: "JetBrains Mono", monospace; font-size: 0.72rem; letter-spacing: 1px; color: var(--dim); text-transform: uppercase; white-space: nowrap; }
+  ul { padding-left: 20px; color: var(--dim); font-size: 0.92rem; }
+  ul li { margin-bottom: 8px; }
+  .ok { color: var(--green); }
+  .warn { color: var(--amber); }
+  .foot { margin-top: 28px; text-align: center; color: var(--dim); font-size: 0.8rem; }
+  .foot a { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <span class="pill">SAMPLE DELIVERABLE · VIRTUAL ASSISTANT WORK</span>
+  <h1>Data Entry &amp; CRM Cleanup — Sunrise Travel Co.</h1>
+  <p class="sub">A role-play client brief: a week of messy agent notes — phone calls, emails, and sticky notes — turned into a CRM-ready client tracker. These are the accuracy rules an owner can trust.</p>
+
+  <div class="card">
+    <h2>Client Brief (as given to me)</h2>
+    <div class="meta">
+      <div><span>Client</span><strong>Sunrise Travel Co. (US/Canada clients)</strong></div>
+      <div><span>Task</span><strong>10 messy leads → clean tracker</strong></div>
+      <div><span>Data sources</span><strong>Call log · emails · agent sticky notes</strong></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>The 8 Accuracy Rules I Work To</h2>
+    <ul>
+      <li><span class="ok">✓</span> <strong>Don't guess.</strong> Missing info stays blank — never invent numbers, emails, or dates.</li>
+      <li><span class="ok">✓</span> <strong>Dates</strong> always as <code>YYYY-MM-DD</code>; unknown year left blank, never assumed.</li>
+      <li><span class="ok">✓</span> <strong>US/Canada phones</strong> formatted as <code>+1 (XXX) XXX-XXXX</code>; incomplete numbers flagged.</li>
+      <li><span class="ok">✓</span> <strong>Names</strong> cleaned to title case ("KEVIN TAN" → "Kevin Tan").</li>
+      <li><span class="ok">✓</span> <strong>Trip type</strong> from a fixed list only — closest fit, never invented.</li>
+      <li><span class="ok">✓</span> <strong>"N/A" and "none"</strong> become blank cells, not words.</li>
+      <li><span class="ok">✓</span> <strong>One row per lead.</strong> Duplicates merged into one entry.</li>
+      <li><span class="ok">✓</span> <strong>Notes column</strong> = only what agents need: requests, budget, "do not call", pending items.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Source Notes → Structure</h2>
+    <table>
+      <thead>
+        <tr><th>Raw note sample</th><th>Cleaned into</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>"Call 1: Maria Santos, ph 416-555-0134, round trip Toronto from Manila, Dec 15-30, 2 adults, asked about refundable fares"</td>
+          <td><code>Name:</code> Maria Santos · <code>Phone:</code> +1 (416) 555-0134 · <code>Trip:</code> Round-trip · <code>Dates:</code> 2026-12-15 → 2026-12-30 · <code>Party:</code> 2 · <code>Note:</code> asked about refundable fares</td>
+        </tr>
+        <tr>
+          <td>"'Honeymoon in Bali' — KEVIN TAN, ph 604-555-0177, March 3-12, departs Seattle, 2 pax, budget $4,000"</td>
+          <td><code>Name:</code> Kevin Tan · <code>Phone:</code> +1 (604) 555-0177 · <code>Trip:</code> Honeymoon · <code>Dates:</code> 2027-03-03 → 2027-03-12 · <code>Note:</code> budget $4,000, departs Seattle</td>
+        </tr>
+        <tr>
+          <td>"Note 2: cancel chen booking — husband's passport expired, no phone or email written"</td>
+          <td><span class="warn">▲ Flagged:</span> cancellation instruction but no record ID — asked client which "Chen" booking; never guessed.</td>
+        </tr>
+        <tr>
+          <td>"Note 5: walk-in — older couple, no booking yet, names not taken"</td>
+          <td><span class="warn">▲ Flagged:</span> not entered — no lead data. Nothing to chase.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card">
+    <h2>How I Report Back (part of the job)</h2>
+    <ul>
+      <li>Number of leads entered, duplicates merged, and items flagged for missing critical info</li>
+      <li>The two messiest things in the source notes — so the owner can fix the process</li>
+      <li>One short, human message — not a wall of text</li>
+    </ul>
+  </div>
+
+  <p class="foot"><a href="../../index.html">← Back to Andrei's portfolio</a></p>
+</div>
+</body>
+</html>

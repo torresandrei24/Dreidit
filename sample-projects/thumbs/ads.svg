@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2E1065"/>
+      <stop offset="1" stop-color="#5B21B6"/>
+    </linearGradient>
+    <pattern id="chk" width="26" height="26" patternUnits="userSpaceOnUse">
+      <rect width="26" height="26" fill="#FFFFFF" opacity="0.06"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <rect width="800" height="500" fill="url(#chk)"/>
+  <rect x="150" y="90" width="500" height="300" rx="14" fill="#FFFFFF"/>
+  <rect x="150" y="90" width="500" height="46" rx="14" fill="#EC4899"/>
+  <circle cx="176" cy="113" r="9" fill="#FFFFFF" opacity="0.9"/>
+  <circle cx="206" cy="113" r="9" fill="#FFFFFF" opacity="0.6"/>
+  <text x="220" y="126" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#FFFFFF">META ADS MANAGER</text>
+  <rect x="180" y="170" width="440" height="26" rx="6" fill="#EDE7F7"/>
+  <rect x="180" y="170" width="300" height="26" rx="6" fill="#6D28D9"/>
+  <rect x="180" y="220" width="440" height="26" rx="6" fill="#EDE7F7"/>
+  <rect x="180" y="220" width="370" height="26" rx="6" fill="#EC4899"/>
+  <rect x="180" y="260" width="440" height="26" rx="6" fill="#EDE7F7"/>
+  <rect x="180" y="260" width="210" height="26" rx="6" fill="#8B5CF6"/>
+  <line x1="180" y1="330" x2="620" y2="330" stroke="#EDE7F7" stroke-width="3" stroke-dasharray="10 8"/>
+  <text x="180" y="358" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#2E1065">₱15,000 · 4 WEEKS · META</text>
+  <text x="400" y="450" font-family="Arial, sans-serif" font-size="34" font-weight="bold" fill="#F9A8D4" text-anchor="middle" letter-spacing="6">PAID ADS CAMPAIGN</text>
+</svg>

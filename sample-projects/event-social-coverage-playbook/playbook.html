@@ -1,0 +1,330 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Event Social Coverage Playbook — TechCon</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../sample-style.css">
+</head>
+<body class="theme-tech">
+
+<!-- Night city backdrop -->
+<svg class="scenery" viewBox="0 0 1600 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#182348"/>
+      <stop offset="0.55" stop-color="#23315E"/>
+      <stop offset="1" stop-color="#31406F"/>
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop offset="0" stop-color="#FDE68A" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#FDE68A" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="600" fill="url(#sky)"/>
+  <circle cx="1290" cy="130" r="150" fill="url(#glow)"/>
+  <circle cx="1290" cy="130" r="52" fill="#F5D37A"/>
+  <circle cx="1312" cy="116" r="10" fill="#F5E7BD" opacity="0.7"/>
+  <circle cx="1272" cy="146" r="7" fill="#F5E7BD" opacity="0.5"/>
+  <g fill="#FFFFFF">
+    <circle cx="120" cy="90" r="2"/><circle cx="260" cy="60" r="1.6"/><circle cx="420" cy="120" r="2.4"/>
+    <circle cx="560" cy="48" r="1.6"/><circle cx="700" cy="100" r="2"/><circle cx="860" cy="55" r="1.6"/>
+    <circle cx="1000" cy="110" r="2.2"/><circle cx="1130" cy="45" r="1.6"/><circle cx="1400" cy="70" r="2"/>
+    <circle cx="1510" cy="130" r="1.6"/><circle cx="180" cy="190" r="1.4"/><circle cx="640" cy="170" r="1.4"/>
+    <circle cx="920" cy="200" r="1.4"/><circle cx="1460" cy="210" r="1.4"/>
+  </g>
+  <path d="M0,470 L160,420 L300,470 L460,410 L640,475 L820,420 L1000,470 L1200,410 L1380,475 L1600,430 L1600,600 L0,600 Z" fill="#101A3C" opacity="0.9"/>
+  <g fill="#1B2752">
+    <rect x="60" y="440" width="60" height="60"/><rect x="140" y="460" width="50" height="40"/>
+    <rect x="320" y="430" width="70" height="70"/><rect x="410" y="455" width="45" height="45"/>
+    <rect x="700" y="445" width="55" height="55"/><rect x="770" y="460" width="60" height="40"/>
+    <rect x="1040" y="435" width="65" height="65"/><rect x="1130" y="460" width="50" height="40"/>
+    <rect x="1380" y="450" width="60" height="50"/><rect x="1460" y="465" width="55" height="35"/>
+  </g>
+  <g fill="#FDE68A" opacity="0.85">
+    <rect x="70" y="450" width="8" height="8"/><rect x="330" y="440" width="8" height="8"/>
+    <rect x="710" y="455" width="8" height="8"/><rect x="1050" y="445" width="8" height="8"/>
+    <rect x="1390" y="460" width="8" height="8"/>
+  </g>
+</svg>
+
+<!-- ============ SIDEBAR ============ -->
+<aside class="sidebar">
+  <div class="brand">TechCon <span>Social</span> 🎤</div>
+  <ul class="nav">
+    <li><button data-target="page-cover" class="active"><span class="ico">⚡</span>Overview</button></li>
+    <li><button data-target="page-strategy"><span class="ico">🧱</span>Strategy</button></li>
+    <li><button data-target="page-preevent"><span class="ico">🗓️</span>Pre-Event</button></li>
+    <li><button data-target="page-runs"><span class="ico">🎥</span>Run of Show</button></li>
+    <li><button data-target="page-postevent"><span class="ico">🎯</span>Post-Event</button></li>
+    <li><button data-target="page-community"><span class="ico">💬</span>Community</button></li>
+    <li><button data-target="page-report"><span class="ico">📋</span>Report</button></li>
+  </ul>
+  <div class="foot">By Andrei Torres ✨<br>Social Media Management</div>
+</aside>
+
+<!-- ============ MAIN ============ -->
+<main class="main">
+  <div class="nav-arrows">
+    <button id="prevBtn" title="Previous">‹</button>
+    <button id="nextBtn" title="Next">›</button>
+  </div>
+  <div class="slide-wrap">
+
+    <!-- PAGE 1 · COVER -->
+    <section class="page active" id="page-cover">
+      <div class="slide cover">
+        <span class="sparkle sp-1">🎤</span>
+        <span class="sparkle sp-2">🎥</span>
+        <span class="sparkle sp-3">⚡</span>
+        <span class="sparkle sp-4">📱</span>
+        <div></div>
+        <h1>Event Social Coverage<br><span>Playbook</span></h1>
+        <p>A complete TikTok-first social coverage plan for a 2–3 day tech conference — built on real experience in event operations, ticketing, and live-event delivery. Fill seats, amplify speakers, and turn the crowd into content.</p>
+        <div class="meta">
+          <div><div class="k">Event</div><div class="v">Tech / industry conference</div></div>
+          <div><div class="k">Length</div><div class="v">2–3 days</div></div>
+          <div><div class="k">Primary platform</div><div class="v">TikTok</div></div>
+          <div><div class="k">Support</div><div class="v">Instagram · Facebook</div></div>
+        </div>
+      </div>
+      <div class="slide section">
+        <span class="kicker">📋 The Ask</span>
+        <h2>Project Overview</h2>
+        <div class="table-scroll"><table class="plain">
+          <tr><th style="width:30%">Item</th><th>Detail</th></tr>
+          <tr><td><b>Primary objective</b></td><td>Fill seats + build event brand awareness</td></tr>
+          <tr><td>Secondary objectives</td><td>Live engagement, speaker/partner amplification, ticket sales lift</td></tr>
+          <tr><td>Budget assumption</td><td>Zero-cost content — phones and in-house team, no paid ads in Phase 1</td></tr>
+          <tr><td>KPIs</td><td>250K+ TikTok views, 10K+ profile visits, 1K+ followers, 2K+ ticket clicks, 150+ avg LIVE viewers</td></tr>
+          <tr><td>Timeline</td><td>4–6 weeks pre · live coverage · 2 weeks post + full report</td></tr>
+        </table></div>
+        <div class="note">🚀 Speed beats polish: TikTok punishes late content more than imperfect content. This whole playbook runs on that rule.</div>
+      </div>
+    </section>
+
+    <!-- PAGE 2 · STRATEGY -->
+    <section class="page" id="page-strategy">
+      <div class="slide section">
+        <span class="kicker">🧱 Structure</span>
+        <h2>5 Content Pillars</h2>
+        <p class="lead">Every piece of content falls under one pillar — the feed stays structured and measurable.</p>
+        <div class="pillars">
+          <div class="pillar t1"><div class="ico">🔥</div><div class="pct">P1</div><div class="name">Hype &amp; FOMO</div><div class="tagl">speaker teasers, last tickets</div></div>
+          <div class="pillar t2"><div class="ico">🎓</div><div class="pct">P2</div><div class="name">Value &amp; Education</div><div class="tagl">60-sec speaker tips</div></div>
+          <div class="pillar t3"><div class="ico">👥</div><div class="pct">P3</div><div class="name">People &amp; Community</div><div class="tagl">interviews, BTS, booths</div></div>
+          <div class="pillar t4"><div class="ico">📡</div><div class="pct">P4</div><div class="name">Live Ops</div><div class="tagl">LIVE, day recaps</div></div>
+          <div class="pillar t5"><div class="ico">🔁</div><div class="pct">P5</div><div class="name">Recap &amp; Next</div><div class="tagl">highlights, "see you next year"</div></div>
+        </div>
+        <div class="schedule">
+          <table>
+            <tr><td>🧭 Rule of thumb</td><td>Before: 60% P1–P2 &nbsp;·&nbsp; During: 70% P3–P4 &nbsp;·&nbsp; After: 80% P5</td></tr>
+            <tr><td>⏰ Cadence</td><td>3–4 TikToks/week pre-event · 2 Stories/day in the final week</td></tr>
+            <tr><td>🇵🇭 Best windows</td><td>6–8 AM · 12–1 PM · 6–9 PM (PH timezone)</td></tr>
+            <tr><td>🎯 CTA rule</td><td>Ticket link pinned in comments on ALL pre-event posts</td></tr>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGE 3 · PRE-EVENT -->
+    <section class="page" id="page-preevent">
+      <div class="slide section">
+        <span class="kicker">🗓️ 4–6 weeks out</span>
+        <h2>Assets to Prepare</h2>
+        <ul class="check-list">
+          <li>Event logo pack + brand colors + font file</li>
+          <li>Speaker headshots + talk titles (confirm consent)</li>
+          <li>Venue photos / video walkthrough</li>
+          <li>Ticket link — UTM-tracked: <code>?utm_source=tiktok&amp;utm_medium=social</code></li>
+          <li>20-question interview list for on-site creators</li>
+          <li>Sponsor booth list + talking points</li>
+          <li>Branded hashtag (<code>#TechCon2027</code>) + alt hashtags</li>
+          <li>Emergency kit: backup phones, power banks, gimbal, lav mic</li>
+          <li>Posting schedule drafted — leave 20% buffer for on-the-day content</li>
+        </ul>
+      </div>
+      <div class="slide section">
+        <span class="kicker">📅 Sample calendar</span>
+        <h2>Pre-Event Content Plan</h2>
+        <div class="table-scroll"><table class="cal" style="min-width:680px;">
+          <tr><th>Week</th><th>Day</th><th>Pillar</th><th>Content</th><th>Hook / caption angle</th></tr>
+          <tr><td>W-5</td><td>Mon</td><td><span class="pillar-chip c-promo">P1</span></td><td>Speaker reveal #1</td><td>"You'll never guess who's flying in for this…"</td></tr>
+          <tr><td>W-5</td><td>Thu</td><td><span class="pillar-chip c-product">P2</span></td><td>30-sec explainer: what is TechCon?</td><td>"If you work in tech, you need to know this event"</td></tr>
+          <tr><td>W-4</td><td>Tue</td><td><span class="pillar-chip c-promo">P1</span></td><td>Venue tour (10 sec)</td><td>"This is where the biggest minds in tech meet"</td></tr>
+          <tr><td>W-4</td><td>Fri</td><td><span class="pillar-chip c-comm">P3</span></td><td>Team intro: "meet the humans"</td><td>"We run on coffee and spreadsheets"</td></tr>
+          <tr><td>W-3</td><td>Mon</td><td><span class="pillar-chip c-promo">P1</span></td><td>Speaker reveal #2 (teaser style)</td><td>"POV: your favorite speaker is 3 weeks away"</td></tr>
+          <tr><td>W-3</td><td>Wed</td><td><span class="pillar-chip c-product">P2</span></td><td>"3 talks you can't miss" carousel</td><td>"Day 2 schedule just dropped"</td></tr>
+          <tr><td>W-2</td><td>Mon</td><td><span class="pillar-chip c-promo">P1</span></td><td>"Last 50 early-bird tickets" urgency</td><td>"Early-bird ends Friday — do not sleep on this"</td></tr>
+          <tr><td>W-2</td><td>Fri</td><td><span class="pillar-chip c-comm">P3</span></td><td>Sponsor spotlight reel</td><td>"Meet the brands powering TechCon"</td></tr>
+          <tr><td>W-1</td><td>Mon</td><td><span class="pillar-chip c-promo">P1</span></td><td>Countdown start: "7 days"</td><td>"7 days until 2,000 tech people in one room"</td></tr>
+          <tr><td>W-1</td><td>Thu</td><td><span class="pillar-chip c-product">P2</span></td><td>What to bring / expect</td><td>"What I wish I knew before my first conference"</td></tr>
+          <tr><td>W-1</td><td>Sat</td><td><span class="pillar-chip c-comm">P3</span></td><td>"Day in the life" vlog</td><td>"Day in the life of a conference organizer"</td></tr>
+        </table></div>
+      </div>
+    </section>
+
+    <!-- PAGE 4 · RUN OF SHOW -->
+    <section class="page" id="page-runs">
+      <div class="slide section">
+        <span class="kicker">🎥 During the event</span>
+        <h2>Daily Rhythm</h2>
+        <p class="lead">The same skeleton every day — post raw clips within 2 hours of the moment.</p>
+        <div class="table-scroll"><table class="cal" style="min-width:660px;">
+          <tr><th>Time</th><th>Activity</th><th>Format</th><th>Owner</th></tr>
+          <tr><td>6:30 AM</td><td>"Day 2 setup" b-roll: crew, coffee, badges</td><td>TikTok post (scheduled 8 AM)</td><td>Creator A</td></tr>
+          <tr><td>8:00 AM</td><td>Doors open: check-in b-roll + welcome</td><td>Story / Reel</td><td>Creator A</td></tr>
+          <tr><td>9:00 AM</td><td>Keynote: 15-sec clip within 10 min of it ending</td><td>TikTok post</td><td>Editor</td></tr>
+          <tr><td>10:30 AM</td><td>Speaker interview #1 (2-min cut)</td><td>TikTok post</td><td>Creator B</td></tr>
+          <tr><td>12:00 PM</td><td>Lunch crowd shot + "best lunch flex"</td><td>TikTok post</td><td>Creator A</td></tr>
+          <tr><td>1:30 PM</td><td>Sponsor booth tour</td><td>TikTok post</td><td>Creator B</td></tr>
+          <tr><td>3:00 PM</td><td>Speaker interview #2</td><td>TikTok post</td><td>Creator B</td></tr>
+          <tr><td>4:30 PM</td><td>Day recap draft + day's stats screenshot</td><td>—</td><td>Editor</td></tr>
+          <tr><td>6:00 PM</td><td>"Day 1 done" wrap video + CTA "join us tomorrow"</td><td>TikTok post</td><td>Editor</td></tr>
+          <tr><td>7:30 PM</td><td>Post-day debrief — what hit, what missed</td><td>Meeting</td><td>Lead</td></tr>
+        </table></div>
+      </div>
+      <div class="slide section">
+        <span class="kicker">📡 LIVE + rules</span>
+        <h2>LIVE Plan &amp; On-the-Day Rules</h2>
+        <div class="cap-grid">
+          <div class="cap-card">
+            <div class="num">TikTok LIVE</div>
+            <div class="hint">When to go live</div>
+            <div class="b">Day 1 opening keynote (30 min) · Day 2 lunch Q&amp;A (20 min) · Day 2 closing keynote (30 min) · Day 3 awards (20 min).</div>
+            <div class="cta">Crew: host + camera + moderator</div>
+          </div>
+          <div class="cap-card">
+            <div class="num">Post-LIVE</div>
+            <div class="hint">Clip the best moment</div>
+            <div class="b">Cut the best 30 sec into a normal post within 2 hours. LIVE replays underperform raw clips — always follow up.</div>
+            <div class="cta">Pinned comment = ticket link</div>
+          </div>
+          <div class="cap-card">
+            <div class="num">Music &amp; consent</div>
+            <div class="hint">Stay compliant</div>
+            <div class="b">Use TikTok's Commercial Music Library only. Ask before filming attendees; keep a "no photo" badge option for speakers.</div>
+            <div class="cta">Protects the brand</div>
+          </div>
+        </div>
+        <ol class="steps" style="margin-top:20px;">
+          <li><b>Speed beats polish.</b> Raw, authentic clips posted within 2 hours.</li>
+          <li><b>CTA on every post.</b> Ticket link pinned in comments; "follow for day 2" during the event.</li>
+          <li><b>Reply to every comment in the first hour.</b> Comments = algorithm fuel; save 20 min/day for replies.</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- PAGE 5 · POST-EVENT -->
+    <section class="page" id="page-postevent">
+      <div class="slide section">
+        <span class="kicker">🎯 1–2 weeks after</span>
+        <h2>Post-Event Timeline</h2>
+        <div class="table-scroll"><table class="plain" style="min-width:560px;">
+          <tr><th style="width:20%">Day after</th><th>Action</th></tr>
+          <tr><td>+0</td><td><b>"It's a wrap"</b> post: crowd + confetti + emotional hook</td></tr>
+          <tr><td>+1</td><td><b>Highlight reel</b> (60–90 sec, best clips) + thread of speaker quotes</td></tr>
+          <tr><td>+2</td><td>Attendee testimonial clips — "what I'll take home"</td></tr>
+          <tr><td>+3</td><td><b>Stats post:</b> "TechCon by the numbers" (2,000 attendees, 40 talks, 15 sponsors)</td></tr>
+          <tr><td>+5</td><td>Thank-you post to sponsors, speakers, volunteers</td></tr>
+          <tr><td>+7</td><td>"Save the date 2028" teaser + waitlist link</td></tr>
+          <tr><td>+14</td><td><b>Final report:</b> full analytics delivered to stakeholders</td></tr>
+        </table></div>
+        <div class="note">🎉 The recap phase is the cheapest marketing for next year's event — this window converts this year's crowd into next year's ticket buyers.</div>
+      </div>
+    </section>
+
+    <!-- PAGE 6 · COMMUNITY -->
+    <section class="page" id="page-community">
+      <div class="slide section">
+        <span class="kicker">💬 Engagement</span>
+        <h2>Hashtag &amp; Community Playbook</h2>
+        <div class="tag-row"><span class="tag-label">Branded</span><span class="tag-list">#TechCon2027 (every post)</span></div>
+        <div class="tag-row"><span class="tag-label">Reach (3–4)</span><span class="tag-list">#techconference #conferencevlog #techcareers #philippinestech #startuplife</span></div>
+        <div class="tag-row"><span class="tag-label">Niche (2–3)</span><span class="tag-list">#aiforbusiness #productivity (rotate by topic)</span></div>
+        <p style="margin-top:14px; font-size:13px; color:var(--ink-soft); font-weight:600;">Search tip: put the key phrase in the first 2 lines of the caption AND say it in the first 3 seconds — TikTok search picks up both. Never repeat the same 15 generic hashtags.</p>
+      </div>
+      <div class="slide section">
+        <span class="kicker">🤝 Amplify</span>
+        <h2>Community Moves</h2>
+        <ol class="steps">
+          <li><b>Duet/Stitch:</b> day before the event, duet the top 3 "what to expect" videos from creators</li>
+          <li><b>Creators in the room:</b> invite 10 local tech creators — free ticket for 1 post + 1 LIVE mention</li>
+          <li><b>UGC fuel:</b> photo-booth wall with the branded hashtag; post "best of the wall" on day 2</li>
+          <li><b>Crisis templates:</b> pre-written calm replies for overcrowding, speaker cancellation, ticket issues — triage, then hand off to ops</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- PAGE 7 · REPORT -->
+    <section class="page" id="page-report">
+      <div class="slide section">
+        <span class="kicker">📋 Deliverable</span>
+        <h2>Reporting Template</h2>
+        <div class="deck">EVENT SOCIAL REPORT — TECHCON 2027
+Dates covered:    [start] to [end]   ·  Platform: TikTok (primary)
+
+TOTAL CAMPAIGN RESULTS
+  Views / impressions : ______
+  Engagements         : ______
+  Engagement rate     : ______ %
+  Followers           : before ______ → after ______
+  Ticket link clicks  : ______ (via UTM)
+
+TOP 5 POSTS
+  1. [title] — views ______ · eng. rate ______ %
+  2. [title] — views ______ · eng. rate ______ %
+
+LIVE PERFORMANCE
+  Total LIVE viewers : ______ · Peak concurrent: ______
+
+WHAT WORKED
+  - ...
+
+WHAT DIDN'T / LESSONS
+  - ...
+
+NEXT EVENT RECOMMENDATIONS (3 bullets)
+  - ...</div>
+        <div class="note">💼 This is the "reports results, not just posts content" proof — the #1 thing SMM hiring managers look for in a portfolio.</div>
+      </div>
+      <div class="slide footer">
+        <div class="brand">TechCon <span>Social</span> 🎤 · Event Coverage Playbook</div>
+        <div class="contact">Prepared by <a href="mailto:andreitorres0924@gmail.com">Andrei Torres</a> · <a href="https://www.linkedin.com/in/andrei-torres-9642a53aa" target="_blank" rel="noopener">LinkedIn</a></div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<script>
+  const pages = Array.from(document.querySelectorAll('.page'));
+  const navBtns = Array.from(document.querySelectorAll('.nav button'));
+  const prevBtn = document.getElementById('prevBtn');
+  const nextBtn = document.getElementById('nextBtn');
+  let current = 0;
+
+  function showPage(index) {
+    if (index < 0 || index >= pages.length) return;
+    current = index;
+    pages.forEach(p => p.classList.remove('active'));
+    navBtns.forEach(b => b.classList.remove('active'));
+    pages[current].classList.add('active');
+    navBtns[current].classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  navBtns.forEach((btn, i) => btn.addEventListener('click', () => showPage(i)));
+  prevBtn.addEventListener('click', () => showPage(current - 1));
+  nextBtn.addEventListener('click', () => showPage(current + 1));
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowRight') showPage(current + 1);
+    if (e.key === 'ArrowLeft') showPage(current - 1);
+  });
+</script>
+
+</body>
+</html>

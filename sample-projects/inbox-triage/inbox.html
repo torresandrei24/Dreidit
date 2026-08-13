@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inbox Triage — Wander &amp; Co. | Andrei Torres</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0a0b; --card: #16161a; --border: #26262b;
+    --text: #f4f4f5; --dim: #9d9da3; --accent: #ff4d6d; --green: #4ade80;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: "Inter", system-ui, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 40px 20px 80px; }
+  .pill {
+    display: inline-block; font-family: "JetBrains Mono", monospace; font-size: 0.72rem;
+    letter-spacing: 1px; color: var(--accent); border: 1px solid var(--border);
+    padding: 5px 12px; border-radius: 999px; margin-bottom: 18px;
+  }
+  h1 { font-size: clamp(1.7rem, 4vw, 2.4rem); margin-bottom: 8px; }
+  .sub { color: var(--dim); margin-bottom: 32px; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 24px; }
+  .card + .card { margin-top: 20px; }
+  h2 { font-size: 1.1rem; margin-bottom: 12px; }
+  .meta { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 18px; }
+  .meta div span { display: block; color: var(--dim); font-size: 0.8rem; }
+  .meta div strong { font-size: 0.9rem; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  th { font-family: "JetBrains Mono", monospace; font-size: 0.75rem; letter-spacing: 1px; color: var(--dim); text-transform: uppercase; }
+  .tag { display: inline-block; font-size: 0.72rem; font-family: "JetBrains Mono", monospace; padding: 3px 10px; border-radius: 999px; border: 1px solid var(--border); white-space: nowrap; }
+  .tag.handle { color: var(--green); border-color: rgba(74, 222, 128, 0.4); }
+  .tag.client { color: var(--accent); border-color: rgba(255, 77, 109, 0.4); }
+  .tag.junk { color: var(--dim); }
+  ul { padding-left: 20px; color: var(--dim); font-size: 0.92rem; }
+  ul li { margin-bottom: 6px; }
+  .note { background: rgba(255, 77, 109, 0.08); border: 1px solid rgba(255, 77, 109, 0.3); border-radius: 10px; padding: 14px 16px; font-size: 0.88rem; }
+  .foot { margin-top: 28px; text-align: center; color: var(--dim); font-size: 0.8rem; }
+  .foot a { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <span class="pill">SAMPLE DELIVERABLE · VIRTUAL ASSISTANT WORK</span>
+  <h1>Inbox Triage — Wander &amp; Co.</h1>
+  <p class="sub">A role-play client session: Sarah runs a boutique travel agency and dumped everything on my desk. One triage session, ready for her review by end of day.</p>
+
+  <div class="card">
+    <h2>Client Brief</h2>
+    <div class="meta">
+      <div><span>Client</span><strong>Sarah — Wander &amp; Co. (travel)</strong></div>
+      <div><span>Task</span><strong>Triaged unread inbox</strong></div>
+      <div><span>Rule</span><strong>Never guess — flag for the owner</strong></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>The Triage</h2>
+    <table>
+      <thead>
+        <tr><th>Source / Subject</th><th>Bucket</th><th>Action taken</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>john@kayakdeals.example — <em>"SALE: 60% off flights to Asia"</em></td>
+          <td><span class="tag junk">Junk</span></td>
+          <td>Promotional newsletter — unsubscribed, no reply needed.</td>
+        </tr>
+        <tr>
+          <td>marcus@carruthers.example — <em>"Flights booked — what's next?"</em></td>
+          <td><span class="tag handle">Handled</span></td>
+          <td>Client follow-up — drafted reply confirming next steps (hotel options, visa info), queued for approval.</td>
+        </tr>
+        <tr>
+          <td>hotel@royallisbon.example — <em>"Invoice #4821"</em></td>
+          <td><span class="tag handle">Handled</span></td>
+          <td>Supplier invoice — filed in /Invoices, cross-checked amount against booking records, flagged for payment.</td>
+        </tr>
+        <tr>
+          <td>anna@company.example — <em>"URGENT: 8 hotel rooms, Lisbon, Oct 15"</em></td>
+          <td><span class="tag client">Needs owner</span></td>
+          <td>New corporate lead — pricing decision is Sarah's. Checked availability, draft holding reply ready to send.</td>
+        </tr>
+        <tr>
+          <td>noreply@bank.example — <em>"Verify your account immediately"</em></td>
+          <td><span class="tag junk">Phishing</span></td>
+          <td><strong>Phishing attempt.</strong> Suspicious domain + urgency + login link — not clicked. Marked spam, reported, owner notified.</td>
+        </tr>
+        <tr>
+          <td>sarah@wanderandco.example — <em>"Fwd: deposit confirmation"</em></td>
+          <td><span class="tag handle">Handled</span></td>
+          <td>Informational — archived in /Carruthers booking, noted deposit paid.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card">
+    <h2>End-of-Day Summary for Sarah</h2>
+    <ul>
+      <li>4 items handled end-to-end (Carruthers follow-up, invoice filed, deposit archived)</li>
+      <li>1 needs your attention: Anna's corporate booking request (8 rooms, Oct 15) — holding reply ready</li>
+      <li>1 phishing attempt — flagged and blocked, no risk</li>
+      <li>2 junk items — cleaned up</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="note"><strong>Why this proves VA readiness:</strong> security awareness (phishing caught), judgment (what to handle vs. escalate), documentation (a summary the owner actually reads), and follow-through (drafts ready, not promises).</div>
+  </div>
+
+  <p class="foot"><a href="../../index.html">← Back to Andrei's portfolio</a></p>
+</div>
+</body>
+</html>

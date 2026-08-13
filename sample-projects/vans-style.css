@@ -1,0 +1,136 @@
+/* ============================================================
+   Vans "Off The Wall PH" concept theme — black / white / red
+   Cardboard-skate aesthetic. Loaded after sample-style.css.
+   ============================================================ */
+
+body.theme-vans {
+  --cream: #F4F2EE;
+  --cream-2: #E6E3DC;
+  --ink: #111111;
+  --ink-soft: #5A564E;
+  --pine: #E20000;
+  --pine-deep: #111111;
+  --moss: #2E2E2E;
+  --amber: #E20000;
+  --amber-deep: #A00000;
+  --honey: #FFFFFF;
+  --sand: #D3D0C8;
+  --white: #FFFFFF;
+  font-family: 'Quicksand', 'Segoe UI', sans-serif;
+}
+
+/* Display type — stencil/condensed for every big headline */
+body.theme-vans h1,
+body.theme-vans h2,
+body.theme-vans h3,
+body.theme-vans .sidebar .brand,
+body.theme-vans .cap-card .hint,
+body.theme-vans .mock .art h3 {
+  font-family: 'Anton', 'Arial Black', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+body.theme-vans .cover h1 { font-size: 56px; line-height: 1.02; letter-spacing: 2px; text-transform: uppercase; }
+body.theme-vans .cover h1 span {
+  background: linear-gradient(120deg, #FFFFFF, #FFE3E3, #E20000);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+body.theme-vans .cover p { color: #F2F2EE; }
+body.theme-vans .tag { background: #E20000; color: #fff; box-shadow: 0 4px 12px rgba(226,0,0,0.5); }
+body.theme-vans .kicker { color: #E20000; }
+body.theme-vans .nav button.active {
+  background: linear-gradient(120deg, #E20000, #FF5252);
+  color: #fff; box-shadow: 0 6px 16px rgba(226,0,0,0.4);
+}
+body.theme-vans .nav button.active::before { background: #111111; }
+body.theme-vans .steps li::before {
+  background: linear-gradient(120deg, #E20000, #FF5252);
+  color: #fff; border: 2px solid #fff;
+}
+body.theme-vans .kpi td.val { color: #C40000; }
+body.theme-vans .section > p, body.theme-vans .section li { color: #4E4A42; }
+body.theme-vans .check-list li { border: 1.5px solid #D3D0C8; }
+
+/* ---------- Skate zine utilities ---------- */
+.stencil {
+  font-family: 'Anton', 'Arial Black', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.checker {
+  background: repeating-conic-gradient(#111 0% 25%, #fff 0% 50%) 0 0 / 22px 22px;
+}
+.checker-red {
+  background: repeating-conic-gradient(#E20000 0% 25%, #111 0% 50%) 0 0 / 22px 22px;
+}
+.halftone {
+  background-image: radial-gradient(rgba(17,17,17,0.16) 1.3px, transparent 1.4px);
+  background-size: 15px 15px;
+}
+.strip-black {
+  background: #111; color: #fff;
+  padding: 14px 22px; font-size: 13px; font-weight: 800;
+  letter-spacing: 2px; text-transform: uppercase;
+  display: flex; justify-content: space-between; align-items: center; gap: 8px;
+}
+
+/* ---------- Logo gallery ---------- */
+.logo-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.logo-box {
+  background: #fff; border: 2px solid #111; border-radius: 20px;
+  padding: 30px 20px; display: flex; flex-direction: column;
+  align-items: center; justify-content: center; gap: 14px; min-height: 240px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.logo-box:hover { transform: translateY(-6px) rotate(-1deg); box-shadow: 0 12px 24px rgba(17,17,17,0.18); }
+.logo-box .lbl {
+  font-size: 11px; font-weight: 800; text-transform: uppercase;
+  letter-spacing: 1.5px; color: #8A867E;
+}
+.logo-box.on-dark { background: #111; border-color: #111; }
+
+/* ---------- Palette ---------- */
+.palette { display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; }
+.swatch {
+  height: 130px; border-radius: 18px; border: 2px solid #fff;
+  box-shadow: 0 6px 16px rgba(17,17,17,0.15);
+  display: flex; flex-direction: column; justify-content: flex-end;
+  padding: 12px 14px; transition: transform 0.2s ease;
+}
+.swatch:hover { transform: translateY(-5px) scale(1.02); }
+.swatch .nm { font-size: 12px; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; }
+.swatch .hex { font-size: 11px; font-weight: 700; opacity: 0.75; }
+
+/* ---------- Sticker ---------- */
+.sticker {
+  width: 190px; height: 190px; border-radius: 50%;
+  background: #fff; border: 10px solid #E20000;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  box-shadow: 0 10px 24px rgba(17,17,17,0.25);
+  transform: rotate(-6deg); transition: transform 0.25s ease;
+}
+.sticker:hover { transform: rotate(3deg) scale(1.06); }
+.sticker .v { font-family: 'Anton', sans-serif; font-size: 44px; color: #E20000; line-height: 1; }
+.sticker .ow { font-size: 10px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; color: #111; margin-top: 4px; }
+
+/* ---------- Social post mockups ---------- */
+.post {
+  border-radius: 22px; overflow: hidden; background: #fff;
+  border: 2px solid #111; box-shadow: 0 8px 20px rgba(17,17,17,0.14);
+  transition: transform 0.25s ease;
+}
+.post:hover { transform: rotate(1.2deg) scale(1.02); }
+.post .screen { padding: 22px; }
+.post .pcap { padding: 12px 16px; border-top: 2px solid #111; }
+.post .pcap .handle { font-size: 11px; font-weight: 800; }
+.post .pcap p { font-size: 12px; font-weight: 600; color: #55554F; margin-top: 4px; }
+.post-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.screen-red { background: #E20000; }
+.screen-ink { background: #111; color: #fff; }
+.screen-off { background: #F4F2EE; }
+
+/* ---------- Type specimen ---------- */
+.type-show { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.type-card { border: 2px solid #111; border-radius: 20px; padding: 24px; background: #fff; }
+.big-sample { font-size: 34px; line-height: 1.15; }
