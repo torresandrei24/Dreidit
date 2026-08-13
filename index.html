@@ -1,0 +1,289 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Andrei Torres — Virtual Assistant</title>
+  <meta name="description" content="Portfolio of Andrei Torres — virtual assistant specializing in inbox & email management, calendar & scheduling, data entry, and social media content. Based in Magalang, Pampanga, Philippines." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23a3e6be'/><text x='50' y='68' font-size='52' font-family='Arial' font-weight='800' fill='%230d1f16' text-anchor='middle'>A</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="css/style.css?v=9" />
+</head>
+<body>
+  <script>
+    (function () {
+      var t = localStorage.getItem("theme") || "dark";
+      document.documentElement.setAttribute("data-theme", t);
+    })();
+  </script>
+
+  <canvas id="particleCanvas" aria-hidden="true"></canvas>
+
+  <header class="site-header" id="siteHeader">
+    <nav class="nav">
+      <a href="#hero" class="brand" onclick="goTo('hero');return false;">
+        <span class="brand-mark">A</span>
+        <span class="brand-name">Andrei Torres</span>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <button class="nav-item" data-section="about" onclick="goTo('about')">About</button>
+        <button class="nav-item" data-section="services" onclick="goTo('services')">Services</button>
+        <button class="nav-item" data-section="skills" onclick="goTo('skills')">Skills</button>
+        <button class="nav-item" data-section="tools" onclick="goTo('tools')">Tools</button>
+        <button class="nav-item" data-section="projects" onclick="goTo('projects')">Projects</button>
+<button class="nav-item" data-section="gallery" onclick="goTo('gallery')">Gallery</button>
+        <button class="nav-item" data-section="resume" onclick="goTo('resume')">Resume</button>
+        <button class="nav-item" data-section="certifications" onclick="goTo('certifications')">Certifications</button>
+        <button class="nav-item" data-section="contact" onclick="goTo('contact')">Contact</button>
+      </div>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" title="Toggle theme" aria-label="Toggle theme" onclick="toggleTheme()">
+          <span class="theme-knob" id="themeKnob"><i class="bi bi-moon-fill" id="themeIcon"></i></span>
+        </button>
+        <button class="nav-hamburger" id="navHamburger" aria-label="Open menu"><i class="bi bi-list"></i></button>
+      </div>
+    </nav>
+  </header>
+
+  <div class="drawer-overlay" id="drawerOverlay" onclick="closeDrawer()"></div>
+  <aside class="drawer" id="drawer">
+    <div class="drawer-head">
+      <span class="drawer-title">Menu</span>
+      <button class="drawer-close" onclick="closeDrawer()" aria-label="Close menu"><i class="bi bi-x-lg"></i></button>
+    </div>
+    <button class="drawer-item" data-section="about" onclick="closeDrawer();goTo('about')">About</button>
+    <button class="drawer-item" data-section="services" onclick="closeDrawer();goTo('services')">Services</button>
+    <button class="drawer-item" data-section="skills" onclick="closeDrawer();goTo('skills')">Skills</button>
+    <button class="drawer-item" data-section="tools" onclick="closeDrawer();goTo('tools')">Tools</button>
+    <button class="drawer-item" data-section="projects" onclick="closeDrawer();goTo('projects')">Projects</button>
+<button class="drawer-item" data-section="gallery" onclick="closeDrawer();goTo('gallery')">Gallery</button>
+    <button class="drawer-item" data-section="resume" onclick="closeDrawer();goTo('resume')">Resume</button>
+    <button class="drawer-item" data-section="certifications" onclick="closeDrawer();goTo('certifications')">Certifications</button>
+    <button class="drawer-item" data-section="contact" onclick="closeDrawer();goTo('contact')">Contact</button>
+  </aside>
+
+  <div id="loadingSplash">
+    <div class="splash-card">
+      <div class="splash-mark">A</div>
+      <div class="splash-name">Andrei Torres</div>
+      <div class="splash-sub">Loading portfolio…</div>
+      <div class="splash-bar"><div class="splash-bar-fill"></div></div>
+    </div>
+  </div>
+
+  <main id="main">
+    <section id="hero" class="hero">
+      <div class="hero-inner">
+        <p class="hero-eyebrow">Welcome</p>
+        <img src="img/profile.jpe" alt="Andrei Torres" class="hero-avatar" />
+        <h1 class="hero-title">Hi, I'm Andrei — SMM VA &amp; Web Developer</h1>
+        <p class="hero-sub">I grow online presence and craft digital experiences that make people stop, trust, and click.</p>
+        <button class="btn-accent" onclick="goTo('contact')">Get In Touch</button>
+      </div>
+      <div class="hero-scroll" onclick="goTo('about')"><i class="bi bi-chevron-down"></i></div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <div class="about-grid">
+          <div>
+            <div class="section-head reveal">
+              <div class="section-label">About Me</div>
+              <h2 class="section-title">Andrei Torres</h2>
+              <p class="section-sub">Social Media Manager · Virtual Assistant · Web Developer</p>
+            </div>
+            <div class="reveal">
+              <p class="about-text">
+                I'm an aspiring Social Media Manager, Virtual Assistant, and Event Coordinator passionate about helping businesses grow their online presence. As a BSTM (Tourism Management) graduate, I bring a service-first hospitality background into the digital world — combining creativity, event know-how, and technical skills to create engaging content, manage social media, and coordinate experiences that leave a lasting impression. I'm continuously learning and improving my expertise in content strategy, graphic design, video editing, community engagement, and event management. My goal is to provide organized, reliable, and results-focused support while helping businesses establish a consistent and professional digital presence.
+              </p>
+              <div class="about-stats">
+                <div class="about-stat">
+                  <div class="stat-label">Location</div>
+                  <div class="stat-value">San Francisco, Magalang, Pampanga, PH</div>
+                </div>
+                <div class="about-stat">
+                  <div class="stat-label">Experience</div>
+                  <div class="stat-value">2+ Years</div>
+                </div>
+                <div class="about-stat">
+                  <div class="stat-label">Languages</div>
+                  <div class="stat-value">English · Tagalog · Kapampangan</div>
+                </div>
+              </div>
+              <div class="about-links">
+                <a href="mailto:andreitorres0924@gmail.com" class="social-circle" title="Email"><i class="bi bi-envelope-fill"></i></a>
+                <a href="https://www.linkedin.com/in/andrei-torres-9642a53aa/" target="_blank" rel="noreferrer" class="social-circle" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                <a href="tel:+639451841769" class="social-circle" title="Phone"><i class="bi bi-telephone-fill"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="about-profile reveal">
+            <div class="tilt-card" id="tiltCard">
+              <img src="img/profile-cutout.png" alt="Andrei Torres" class="tilt-image" />
+            </div>
+<div class="resume-btns">
+          <a href="Andrei-VA.pdf" download class="btn-accent btn-resume"><i class="bi bi-download"></i> Download Resume</a>
+        </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-label">Services</div>
+          <h2 class="section-title">What I Offer</h2>
+          <p class="section-sub">Comprehensive administrative, event, and social support — done quietly, accurately, on time.</p>
+        </div>
+        <div class="services-grid" id="servicesGrid"><!-- injected --></div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-label">Skills</div>
+          <h2 class="section-title">Technical Skills</h2>
+        </div>
+        <div class="filter-row reveal" id="skillsFilter"><!-- injected --></div>
+        <div class="skills-grid" id="skillsGrid"><!-- injected --></div>
+      </div>
+    </section>
+
+    <section id="tools" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-label">Tools</div>
+          <h2 class="section-title">Tools I Use</h2>
+        </div>
+        <div class="filter-row reveal" id="toolsFilter"><!-- injected --></div>
+        <div class="skills-grid" id="toolsGrid"><!-- injected --></div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-label">Portfolio</div>
+          <h2 class="section-title">Sample Projects</h2>
+          <p class="section-sub">The kind of deliverables you'd get in your first week with me.</p>
+        </div>
+        <div class="projects-grid" id="projectsGrid"><!-- injected --></div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-label">Gallery</div>
+          <h2 class="section-title">Events &amp; Behind the Scenes</h2>
+          <p class="section-sub">Live events I've coordinated — conferences, exhibits, and cultural shows.</p>
+        </div>
+        <div class="filter-row reveal" id="galleryFilter"><!-- injected --></div>
+        <div class="gallery-grid" id="galleryGrid"><!-- injected --></div>
+      </div>
+    </section>
+
+    <section id="resume" class="section">
+      <div class="container">
+<div class="section-head reveal">
+          <div class="section-label">Resume</div>
+          <h2 class="section-title">Andrei VA — Resume</h2>
+          <p class="section-sub">Full CV covering SMM, VA, and Web Development experience.</p>
+        </div>
+        <div class="resume-inner reveal">
+          <div class="resume-card">
+            <img src="img/resume-thumb.png" alt="Andrei VA — Resume" />
+          </div>
+          <div class="resume-btns">
+<a href="Andrei-VA.pdf" download class="btn-accent btn-resume"><i class="bi bi-download"></i> Download</a>
+        </div>
+      </div>
+    </section>
+
+<section id="certifications" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-label">Credentials</div>
+          <h2 class="section-title">Certifications</h2>
+          <p class="section-sub">Professional qualifications and achievements.</p>
+        </div>
+        <div class="cert-grid">
+          <div class="cert-card">
+            <div class="cert-banner">
+              <img src="img/cert-dot.png" alt="DOT Service Excellence Seminar" onclick="openLightbox('img/cert-dot.png','DOT Service Excellence Seminar','City College of Angeles — Date issued 2022')" />
+            </div>
+            <div class="cert-body">
+              <h3>DOT Service Excellence Seminar</h3>
+              <div class="cert-issuer"><i class="bi bi-building"></i> City College of Angeles</div>
+              <div class="cert-meta"><span><i class="bi bi-calendar-check"></i> Date issued 2022</span></div>
+            </div>
+          </div>
+          <div class="cert-card">
+            <div class="cert-banner">
+              <img src="img/cert-ojt.jpg" alt="Internship OJT - Belajandro Hotel" onclick="openLightbox('img/cert-ojt.jpg','Internship OJT - Belajandro Hotel','Date issued 2026')" />
+            </div>
+            <div class="cert-body">
+              <h3>Internship OJT - Belajandro Hotel</h3>
+              <div class="cert-meta"><span><i class="bi bi-calendar-check"></i> Date issued 2026</span></div>
+            </div>
+          </div>
+          <div class="cert-card">
+            <div class="cert-banner">
+              <img src="img/cert-cca.png" alt="CCA Career Placement Activities" onclick="openLightbox('img/cert-cca.png','CCA Career Placement Activities','City College of Angeles — Date issued 2026')" />
+            </div>
+            <div class="cert-body">
+              <h3>CCA Career Placement Activities</h3>
+              <div class="cert-issuer"><i class="bi bi-building"></i> City College of Angeles</div>
+              <div class="cert-meta"><span><i class="bi bi-calendar-check"></i> Date issued 2026</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-label">Get In Touch</div>
+          <h2 class="section-title">Contact Me</h2>
+          <p class="section-sub">Let's discuss your next project.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h3 class="contact-info-title">Contact Information</h3>
+            <a href="mailto:andreitorres0924@gmail.com" class="contact-tile"><i class="bi bi-envelope-fill"></i><div class="contact-tile-body"><div class="contact-tile-label">Email</div><div class="contact-tile-value">andreitorres0924@gmail.com</div></div></a>
+            <a href="tel:+639451841769" class="contact-tile"><i class="bi bi-telephone-fill"></i><div class="contact-tile-body"><div class="contact-tile-label">Phone</div><div class="contact-tile-value">+63 945 184 1769</div></div></a>
+            <a href="https://www.linkedin.com/in/andrei-torres-9642a53aa/" target="_blank" rel="noreferrer" class="contact-tile"><i class="bi bi-linkedin"></i><div class="contact-tile-body"><div class="contact-tile-label">LinkedIn</div><div class="contact-tile-value">linkedin.com/in/andrei-torres-9642a53aa</div></div></a>
+            <div class="contact-tile"><i class="bi bi-geo-alt-fill"></i><div class="contact-tile-body"><div class="contact-tile-label">Location</div><div class="contact-tile-value">San Francisco, Magalang, Pampanga</div></div></div>
+          </div>
+          <form class="contact-form" id="contactForm">
+            <input type="text" class="form-field" placeholder="Your Name" id="cfName" required />
+            <input type="email" class="form-field" placeholder="Your Email" id="cfEmail" required />
+            <input type="text" class="form-field" placeholder="Subject" id="cfSubject" />
+            <textarea class="form-field form-textarea" placeholder="Your Message" id="cfMessage" rows="5" required></textarea>
+            <div class="form-status" id="formStatus" hidden></div>
+            <button type="submit" class="btn-accent btn-form" id="formSubmit">Send Message</button>
+            <p class="form-note">Opens your email app with the message pre-filled — no account needed.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()" hidden>
+    <div class="lightbox-inner" onclick="event.stopPropagation()">
+      <img id="lightboxImage" src="" alt="" />
+      <button class="lightbox-close" onclick="closeLightbox()" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+      <h3 class="lightbox-title" id="lightboxTitle"></h3>
+      <p class="lightbox-desc" id="lightboxDesc"></p>
+    </div>
+  </div>
+
+  <script src="js/main5.js?v=9"></script>
+</body>
+</html>
