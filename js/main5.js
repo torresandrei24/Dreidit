@@ -103,50 +103,7 @@ const tools = [
   { name: "Metricool", logo: "img/tools/metricool.png", category: "Virtual Assistant" }
 ];
 
-const projects = [
-  {
-    title: "Inbox Triage — Wander & Co.",
-    description: "Full inbox triage session — 4 emails handled end-to-end, 1 escalated for the owner's decision, and 1 phishing attempt caught and reported.",
-    image: "sample-projects/thumbs/calendar.svg",
-    url: "sample-projects/inbox-triage/inbox.html"
-  },
-  {
-    title: "Data Entry & CRM Cleanup — Sunrise Travel",
-    description: "Messy call and email notes turned into CRM-ready rows with strict no-invented-data rules, duplicates merged, and gaps flagged.",
-    image: "sample-projects/thumbs/calendar.svg",
-    url: "sample-projects/data-entry-cleanup/data.html"
-  },
-  {
-    title: "Paid Ads Mini-Campaign",
-    description: "4-week ₱15,000 Meta Ads plan for a Pampanga coffee shop — budget split, 3 audiences, A/B test rules, and a day-28 report template.",
-    image: "sample-projects/thumbs/ads.svg",
-    url: "sample-projects/paid-ads-campaign/ads.html"
-  },
-  {
-    title: "Competitor Audit & Strategy",
-    description: "Social media competitor audit for a Pampanga coffee shop — 8-point framework, gap analysis, and a 90-day action plan.",
-    image: "sample-projects/thumbs/audit.svg",
-    url: "sample-projects/competitor-audit-strategy/audit.html"
-  },
-  {
-    title: "Event Social Coverage Playbook",
-    description: "TikTok-first social coverage plan for a 2“3 day tech conference — pre-event calendar, live run-of-show, and crisis templates.",
-    image: "sample-projects/thumbs/playbook.svg",
-    url: "sample-projects/event-social-coverage-playbook/playbook.html"
-  },
-  {
-    title: "Calendar Management — 30-Day Planner",
-    description: "A clean interactive web planner — organize a month of appointments, tasks, and deadlines in one view.",
-    image: "sample-projects/thumbs/calendar.svg",
-    url: "https://my30daycanlendar.netlify.app/"
-  },
-  {
-    title: "Vans Off The Wall PH — Brand Concept",
-    description: "Independent design concept: logo system, color, typography, and the 'Skate Pinas' campaign for a Philippine streetwear audience.",
-    image: "sample-projects/vans-brand-design/img/hero.jpg",
-    url: "sample-projects/vans-brand-design/brand.html"
-  }
-];
+const projects = [];
 
 const gallery = [
   { image: "img/gallery-realtalk.jpg", title: "REALTALK Conference", description: "Technical Head — 2025", category: "Conferences" },
