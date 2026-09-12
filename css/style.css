@@ -1,4 +1,4 @@
-﻿/* ============ THEME TOKENS ============ */
+/* ============ THEME TOKENS ============ */
 :root,
 [data-theme="dark"] {
   --admin-bg-primary: #0d1f16;
@@ -713,6 +713,7 @@ main, .site-header { position: relative; z-index: 1; }
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 24px;
+  align-items: start;
 }
 
 .project-card {
@@ -720,7 +721,7 @@ main, .site-header { position: relative; z-index: 1; }
   overflow: hidden;
   border: 1px solid var(--admin-border);
   background: var(--admin-card);
-  cursor: zoom-in;
+  cursor: default;
   transition: transform 0.2s;
 }
 
@@ -731,6 +732,10 @@ main, .site-header { position: relative; z-index: 1; }
   padding-bottom: 56.25%;
   position: relative;
   background: var(--admin-bg-secondary);
+}
+
+.project-cover-wrap.is-portrait {
+  padding-bottom: 177.78%;
 }
 
 .project-cover {

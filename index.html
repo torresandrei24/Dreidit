@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-  <link rel="stylesheet" href="css/style.css?v=9" />
+  <link rel="stylesheet" href="css/style.css?v=10" />
 </head>
 <body>
   <script>
@@ -33,7 +33,7 @@
         <button class="nav-item" data-section="services" onclick="goTo('services')">Services</button>
         <button class="nav-item" data-section="skills" onclick="goTo('skills')">Skills</button>
         <button class="nav-item" data-section="tools" onclick="goTo('tools')">Tools</button>
-        <button class="nav-item" data-section="projects" onclick="goTo('projects')">Project</button>
+        <button class="nav-item" data-section="projects" onclick="goTo('projects')">Projects</button>
         <button class="nav-item" data-section="gallery" onclick="goTo('gallery')">Gallery</button>
         <button class="nav-item" data-section="resume" onclick="goTo('resume')">Resume</button>
         <button class="nav-item" data-section="certifications" onclick="goTo('certifications')">Certifications</button>
@@ -58,7 +58,7 @@
     <button class="drawer-item" data-section="services" onclick="closeDrawer();goTo('services')">Services</button>
     <button class="drawer-item" data-section="skills" onclick="closeDrawer();goTo('skills')">Skills</button>
     <button class="drawer-item" data-section="tools" onclick="closeDrawer();goTo('tools')">Tools</button>
-    <button class="drawer-item" data-section="projects" onclick="closeDrawer();goTo('projects')">Project</button>
+    <button class="drawer-item" data-section="projects" onclick="closeDrawer();goTo('projects')">Projects</button>
     <button class="drawer-item" data-section="gallery" onclick="closeDrawer();goTo('gallery')">Gallery</button>
     <button class="drawer-item" data-section="resume" onclick="closeDrawer();goTo('resume')">Resume</button>
     <button class="drawer-item" data-section="certifications" onclick="closeDrawer();goTo('certifications')">Certifications</button>
@@ -169,7 +169,7 @@
       <div class="container">
         <div class="section-head reveal">
           <div class="section-label">Portfolio</div>
-          <h2 class="section-title">Project</h2>
+          <h2 class="section-title">Projects</h2>
           <p class="section-sub">Featured work.</p>
         </div>
         <div class="projects-grid">
@@ -179,6 +179,15 @@
             </div>
             <div class="project-body">
               <h3>Vans Edit</h3>
+              <p class="project-desc">Video edit showcase.</p>
+            </div>
+          </div>
+          <div class="project-card reveal visible">
+            <div class="project-cover-wrap is-portrait">
+              <video src="videos/coffee-making-edit.mp4" class="project-cover" controls preload="metadata" playsinline></video>
+            </div>
+            <div class="project-body">
+              <h3>Coffee Making Edit</h3>
               <p class="project-desc">Video edit showcase.</p>
             </div>
           </div>
